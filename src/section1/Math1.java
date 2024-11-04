@@ -7,11 +7,18 @@ public class Math1 {
         System.out.print("Enter a: ");
         double a = sc.nextDouble();
 
-        double squareRoot = Math.sqrt(a);
+        if (a >= 0) {
+            double squareRoot = Math.sqrt(a);
+            System.out.println("SquareRoot a = "  + squareRoot);
+        } else {
+            System.out.println("Cannot calculate square root of negative numbers.");
+        }
         double square = Math.pow(a, 2);
         double pi = Math.PI * a;
-        System.out.println("SquareRoot a = " + squareRoot);
+
         System.out.println("Square a = " + square);
         System.out.println("Pi * a = " + pi);
+
+        sc.close();
     }
 }
