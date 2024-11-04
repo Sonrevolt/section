@@ -31,3 +31,17 @@ public class TinhToan {
         return a / b;
     }
 }
+
+class main{
+    public static void main(String args[]){
+        TinhToan c = new TinhToan();
+        System.out.println("Tong(int): " + c.Tong(4, 2));
+        System.out.println("Hieu(int): " + c.Hieu(4, 2));
+        System.out.println("Tich(int): " + c.Tich(4, 2));
+        System.out.println("Thuong(int): " + c.Thuong(4, 2));
+        System.out.println("Tong(double): " + c.Tong(5.5,2.2));
+        System.out.println("Hieu(double): " + c.Hieu(5.5,2.2));
+        System.out.println("Tich(double): " + c.Tich(5.5,2.2));
+        System.out.println("Thuong(double): " + c.Thuong(5.5,2.2));
+    }
+}
