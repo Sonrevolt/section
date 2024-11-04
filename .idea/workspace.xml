@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="354de381-b800-4aea-a9a6-1a7b85ed4379" name="Changes" comment="" />
+    <list default="true" id="354de381-b800-4aea-a9a6-1a7b85ed4379" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/section2/ThreeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/section2/ThreeNumber.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
