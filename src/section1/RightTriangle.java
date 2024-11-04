@@ -9,12 +9,12 @@ public class RightTriangle {
         this.edgeB = edgeB;
     }
 
-    public double tinhChuVi() {
+    public double perimeter() {
         double hypotenuse = Math.sqrt(edgeA * edgeA + edgeB * edgeB);
         return edgeA + edgeB + hypotenuse;
     }
 
-    public double tinhDienTich() {
+    public double area() {
         return (edgeA * edgeB) / 2;
     }
 }
