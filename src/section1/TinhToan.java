@@ -32,7 +32,7 @@ public class TinhToan {
     }
 }
 
-class main{
+class Main{
     public static void main(String args[]){
         TinhToan c = new TinhToan();
         System.out.println("Tong(int): " + c.Tong(4, 2));
