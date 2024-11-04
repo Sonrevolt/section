@@ -5,6 +5,9 @@ public class RightTriangle {
     private double edgeB;
 
     public RightTriangle(double edgeA, double edgeB) {
+        if (edgeA <= 0 || edgeB <= 0) {
+            throw new IllegalArgumentException("EdgeA and EdgeB must be positive number.");
+        }
         this.edgeA = edgeA;
         this.edgeB = edgeB;
     }
