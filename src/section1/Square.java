@@ -6,10 +6,10 @@ public class Square {
     public Square(double edge){
         this.edge = edge;
     }
-    private double perimeter(){
+    public double perimeter(){
         return 4 * edge;
     }
-    private double area(){
+    public double area(){
         return edge * edge;
     }
 }
