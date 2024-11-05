@@ -3,10 +3,12 @@ import section5.trungtamjava.model.*;
 public class Info {
     public static void main(String[] args) {
 
+        // Khởi tạo đối tượng bằng constructor mặc định
         Chair chair1 = new Chair();
         chair1.setMaterial("Wood");
         chair1.setColor("Brown");
         chair1.setWeightCapacity(100);
+        // Khởi tạo đối tượng bằng constructor tuy bien
         Chair chair2 = new Chair("Plastic", "Red", 80);
 
         Table table1 = new Table();

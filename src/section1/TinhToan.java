@@ -4,6 +4,7 @@ public class TinhToan {
     public int Tong(int a, int b){
         return a + b;
     }
+    //overload
     public double Tong(double a, double b){
         return a + b;
     }
@@ -21,7 +22,7 @@ public class TinhToan {
     }
     public int Thuong(int a, int b){
         if (b == 0)
-            throw new ArithmeticException("Khong chia cho 0");
+            throw new ArithmeticException("Khong chia cho 0");//xảy ra biểu thức toán học sai
         return a / b;
     }
 

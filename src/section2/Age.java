@@ -4,7 +4,7 @@ public class Age {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
 
-        double age = -1;
+        double age = -1;// Khởi tạo với giá trị âm để vào vòng lặp
 
         while (age <= 0) {
             try {

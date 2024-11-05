@@ -15,7 +15,7 @@ public class Choice {
 
         while (true) {
             System.out.print("Type your answer(A, B, C, D): ");
-            answer = sc.nextLine().toUpperCase();
+            answer = sc.nextLine();
 
             if (answer.equals("A") || answer.equals("B") || answer.equals("C") || answer.equals("D")) {
                 break;

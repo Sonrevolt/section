@@ -14,7 +14,7 @@ public class Shape {
                 System.out.println("Square area = " + square.area());
             } catch (IllegalArgumentException e) {
                 System.out.println("Error: " + e.getMessage());
-                sc.nextLine();
+                sc.nextLine();// Xóa bộ đệm để tránh vòng lặp vô hạn nếu nhập vào không hợp lệ
             }
         } while (square == null);
 

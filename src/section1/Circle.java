@@ -5,7 +5,7 @@ public class Circle {
 
     public Circle(double radius) {
         if (radius <= 0) {
-            throw new IllegalArgumentException("Radius must be positive number.");
+            throw new IllegalArgumentException("Radius must be positive number.");//đối số không hợp lệ
         }
         this.radius = radius;
     }

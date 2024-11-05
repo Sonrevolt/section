@@ -5,9 +5,11 @@ public class Chair {
     private String color;
     private int weight;
 
+    // Constructor mặc định
     public Chair() {
     }
 
+    // Constructor tùy biến
     public Chair(String material, String color, int weight) {
         this.material = material;
         this.color = color;

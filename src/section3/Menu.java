@@ -13,7 +13,7 @@ public class Menu {
             System.out.println("3. Exit");
             System.out.print("Choose an option:  ");
 
-            choice = sc.nextInt();
+            choice = sc.nextInt();//doc lua chon
 
             switch (choice) {
                 case 1:
@@ -28,7 +28,7 @@ public class Menu {
                 default:
                     System.out.println("Invalid option.Please re-enter");
             }
-            System.out.println();
+            System.out.println();// In dòng trống giữa các lần hiển thị menu
         }
 
         sc.close();

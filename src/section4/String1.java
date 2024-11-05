@@ -26,7 +26,7 @@ public class String1 {
         }
         System.out.println("Character 'A' in string1: " + count);
         //4
-        String[] words = s1.split("\s+");
+        String[] words = s1.split("\s+");//regex tách chuỗi s1 thành mảng các từ (String[]) dựa trên khoảng trắng
         System.out.println("Strings after cut:");
         for (String word : words) {
             System.out.println(word);
@@ -41,7 +41,7 @@ public class String1 {
         }
         // 6
         if (phoneNumber.length() == 10 && phoneNumber.startsWith("0")) {
-            String prefix = phoneNumber.substring(0, 3);
+            String prefix = phoneNumber.substring(0, 3);//lấy 3 ký tự đầu tiên
             switch (prefix) {
                 case "032":
                 case "033":
@@ -84,9 +84,13 @@ public class String1 {
 
         sc.close();
     }
+    //"0": Số điện thoại phải bắt đầu bằng chữ số 0.
+    //\\d{9}: Sau số 0, cần có chính xác 9 chữ số (tổng cộng là 10 chữ số).
     private static boolean isValidPhoneNumber(String phoneNumber) {
         return phoneNumber.matches("0\\d{9}");
     }
+    //^[a-zA-Z0-9]{6,}: Email phải bắt đầu bằng ít nhất 6 ký tự chữ cái hoặc số (không có dấu, không có khoảng trắng).
+    //@gmail\\.com$: Email phải kết thúc bằng chuỗi "@gmail.com
     private static boolean isValidEmail(String email) {
         return email.matches("^[a-zA-Z0-9]{6,}@gmail\\.com$");
     }
