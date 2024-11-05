@@ -26,11 +26,69 @@ public class String1 {
         }
         System.out.println("Character 'A' in string1: " + count);
         //4
-        String[] words = s1.split("\\s+");
+        String[] words = s1.split("\s+");
         System.out.println("Strings after cut:");
         for (String word : words) {
             System.out.println(word);
         }
+        //5
+        System.out.print("Enter phone number: ");
+        String phoneNumber = sc.nextLine();
+        if (isValidPhoneNumber(phoneNumber)) {
+            System.out.println("Phone number is valid.");
+        } else {
+            System.out.println("Phone number is invalid.");
+        }
+        // 6
+        if (phoneNumber.length() == 10 && phoneNumber.startsWith("0")) {
+            String prefix = phoneNumber.substring(0, 3);
+            switch (prefix) {
+                case "032":
+                case "033":
+                case "034":
+                case "035":
+                case "036":
+                case "037":
+                case "038":
+                case "039":
+                    System.out.println("Viettel.");
+                    break;
+                case "070":
+                case "076":
+                case "077":
+                case "078":
+                case "079":
+                    System.out.println("Mobifone.");
+                    break;
+                case "083":
+                case "084":
+                case "085":
+                case "081":
+                case "082":
+                    System.out.println("Vinaphone.");
+                    break;
+                default:
+                    System.out.println("Unknown prefix.");
+            }
+        } else {
+            System.out.println("Phone number is invalid so can not find prefix.");
+        }
+        // 7.
+        System.out.print("Enter email: ");
+        String email = sc.nextLine();
+        if (isValidEmail(email)) {
+            System.out.println("Email is valid.");
+        } else {
+            System.out.println("Email is invalid.");
+        }
+
+        sc.close();
+    }
+    private static boolean isValidPhoneNumber(String phoneNumber) {
+        return phoneNumber.matches("0\\d{9}");
+    }
+    private static boolean isValidEmail(String email) {
+        return email.matches("^[a-zA-Z0-9]{6,}@gmail\\.com$");
     }
 }
 
