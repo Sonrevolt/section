@@ -4,32 +4,19 @@ import java.util.Scanner;
 public class String1 {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String s1 = "Hello, World!";
-        System.out.println("String length: " + s1.length());
+        Scanner sc = new Scanner(System.in);
 
-        String s2 = "Hello, World!";
-        if(s2.equals(s1)){
-            System.out.println("equals");
-        }else{
-            System.out.println("Not equals");
+        System.out.print("Enter string1: ");
+        String string1 = sc.nextLine();
+        System.out.println("string1 length: " + string1.length());
+
+        System.out.print("Enter string2: ");
+        String string2 = sc.nextLine();
+        if (string1.contains(string2)) {
+            System.out.println("string2 \"" + string2 + "\" is in string1.");
+        } else {
+            System.out.println("string2 \"" + string2 + "\" is not in string1.");
         }
-
-        int count = 0;
-        char character =0;
-        for (int i = 0; i < s1.length(); i++) {
-            char currentChar = s1.charAt(i);
-            if (currentChar == character) {
-                count++;
-            }
-        }
-        System.out.print("Nhập ký tự cần đếm: ");
-        char characterToCount = scanner.next().charAt(0);
-
-        // In kết quả
-        System.out.println("Số ký tự '" + characterToCount + "' trong chuỗi là: " + count);
-
-        scanner.close();
     }
 }
 
