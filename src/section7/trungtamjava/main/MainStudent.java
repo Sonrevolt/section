@@ -19,7 +19,7 @@ public class MainStudent {
         }
 
         System.out.println("Student Information:");
-        for (Student student : students) {
+        for (Student student : students) { //for each
             student.info();
             System.out.println("-----");
         }

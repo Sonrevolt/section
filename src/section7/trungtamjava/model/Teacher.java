@@ -7,7 +7,7 @@ public class Teacher extends Person {
 
     @Override
     public void input() {
-        super.input();
+        super.input();//goi lop cha
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter Facility: ");
         facility = sc.nextLine();
