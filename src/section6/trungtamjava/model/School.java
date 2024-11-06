@@ -1,5 +1,5 @@
 package section6.trungtamjava.model;
-
+import java.util.Scanner;
 public class School {
     private int id;
     private String schoolName;
@@ -34,5 +34,25 @@ public class School {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public void input() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter id: ");
+        this.id = sc.nextInt();
+        sc.nextLine(); // Đọc bỏ dòng trống
+
+        System.out.print("Enter school name: ");
+        this.schoolName = sc.nextLine();
+
+        System.out.print("Enter address: ");
+        this.address = sc.nextLine();
+    }
+
+    public void info() {
+        System.out.println("ID: " + id);
+        System.out.println("School name: " + schoolName);
+        System.out.println("Address: " + address);
     }
 }
