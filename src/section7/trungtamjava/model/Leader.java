@@ -10,7 +10,13 @@ public class Leader extends Employee {
     }
 
     public double bonus() {
-        return teamSize > 10 ? BASE_SALARY * 0.5 : BASE_SALARY * 0.1;
+        double bonusAmount;
+        if (teamSize > 10) {
+            bonusAmount = BASE_SALARY * 0.5;
+        } else {
+            bonusAmount = BASE_SALARY * 0.1;
+        }
+        return bonusAmount;
     }
 
     @Override

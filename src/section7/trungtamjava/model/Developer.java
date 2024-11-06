@@ -8,6 +8,10 @@ public class Developer extends Employee{
         this.programLanguage = programLanguage;
     }
 
+    public String getProgramLanguage() {
+        return programLanguage;
+    }
+
     @Override
     public void info() {
         System.out.println("Developer - ID: " + id + ", Name: " + name + ", Age: " + age + ", " +
