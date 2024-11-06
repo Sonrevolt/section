@@ -1,6 +1,6 @@
 package section8.model;
 
-// House.java
+
 public class House {
     private String address;
     private int size;

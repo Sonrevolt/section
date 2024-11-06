@@ -1,6 +1,5 @@
 package section8.model;
 
-// Car.java
 public class Car {
     private String model;
     private String licensePlate;
@@ -29,3 +28,4 @@ public class Car {
         }
     }
 }
+
