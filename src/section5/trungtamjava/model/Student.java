@@ -44,16 +44,16 @@ public class Student {
     }
 
     public void input() {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter ID: ");
-        id = scanner.nextInt();
-        scanner.nextLine();
+        id = sc.nextInt();
+        sc.nextLine();
         System.out.print("Enter Name: ");
-        name = scanner.nextLine();
+        name = sc.nextLine();
         System.out.print("Enter Address: ");
-        address = scanner.nextLine();
+        address = sc.nextLine();
         System.out.print("Enter Major: ");
-        major = scanner.nextLine();
+        major = sc.nextLine();
     }
 
     // Hàm info để in ra thông tin của đối tượng
