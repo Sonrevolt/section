@@ -15,25 +15,44 @@ public class Person {
         this.address = address;
     }
 
-    public void input() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter ID: ");
-        id = scanner.nextInt();
-        scanner.nextLine();
-        System.out.print("Enter Name: ");
-        name = scanner.nextLine();
-        System.out.print("Enter Address: ");
-        address = scanner.nextLine();
-        System.out.print("Enter Major: ");
-        major = scanner.nextLine();
+    public int getId() {
+        return id;
     }
 
-    // Hàm info để in ra thông tin của đối tượng
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void input() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter ID: ");
+        id = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Enter Name: ");
+        name = sc.nextLine();
+        System.out.print("Enter Address: ");
+        address = sc.nextLine();
+    }
+
     public void info() {
-        System.out.println("Student Information:");
         System.out.println("ID: " + id);
         System.out.println("Name: " + name);
         System.out.println("Address: " + address);
-        System.out.println("Major: " + major);
     }
 }
