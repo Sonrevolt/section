@@ -24,7 +24,7 @@ public class MainSchool {
             schools[i] = new School();
             schools[i].input();
         }
-        System.out.println("School infomation: ");
+        System.out.println("School information: ");
         for(School school: schools){
             school.info();
             System.out.println("--------");
