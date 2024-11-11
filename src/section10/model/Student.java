@@ -1,23 +1,21 @@
 package section10.model;
 
 public class Student {
-    private int id;
+    private String id;
     private String name;
     private int age;
+    private School school;
+    private Address address;
 
-    public Student(){}
+    // Constructor
+    public Student() {}
 
-    public Student(int id, String name, int age) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-    }
-
-    public int getId() {
+    // Getters và setters
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -35,5 +33,21 @@ public class Student {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public School getSchool() {
+        return school;
+    }
+
+    public void setSchool(School school) {
+        this.school = school;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }
