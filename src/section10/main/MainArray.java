@@ -10,7 +10,7 @@ public class MainArray {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter number of Students: ");
         int n = scanner.nextInt();
-        scanner.nextLine(); // Clear buffer
+        scanner.nextLine();
 
         Student[] students = new Student[n];
         StudentServiceImpl studentService = new StudentServiceImpl();
@@ -21,12 +21,10 @@ public class MainArray {
             studentService.input(students[i]);
         }
 
-        // Hiển thị thông tin của các sinh viên
         for (Student student : students) {
             studentService.info(student);
         }
-
-        // Tìm sinh viên có tuổi lớn nhất
+        
         Student oldestStudent = students[0];
         for (Student student : students) {
             if (student.getAge() > oldestStudent.getAge()) {
