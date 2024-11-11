@@ -11,6 +11,16 @@ public class MainException {
     }
     public static int getInput(String prompt, Scanner sc){
         int number = 0;
-        boolean
+        boolean valid = false;
+        while(!valid){
+            try{
+                System.out.print(prompt);
+                number = Integer.parseInt(sc.nextLine());
+                valid = true;
+            } catch (NumberFormatException e){
+                System.out.println("Please enter valid integer");
+            }
+        }
+        return number;
     }
 }
