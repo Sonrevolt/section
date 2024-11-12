@@ -1,4 +1,4 @@
-package section1;
+package section1;//Package
 
 public class TinhToan {
     public int Tong(int a, int b){
@@ -26,6 +26,8 @@ public class TinhToan {
         return a / b;
     }
 
+    //double a: bien nguyen
+    //hàm
     public double Thuong(double a, double b){
         if (b == 0)
             throw new ArithmeticException("Khong chia cho 0");
